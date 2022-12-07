@@ -2,7 +2,7 @@
 body  {
 
 
-background-image: url('../src/img/skull.svg');
+
 /* background-size: cover;
 background-position: center; */
 background-repeat: round;
@@ -403,4 +403,7 @@ form{
  margin: 66px;
  margin-top: 18.5%;
 }
+}
+.yo{
+  width: 180px;
 }

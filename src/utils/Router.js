@@ -5,7 +5,7 @@ import Layout from './Layout';
 import Conocimientos from "../components/Conocimientos";
 import Javasc from "../components/Javasc";
 import Myreactjs from "../components/Myreactjs";
-
+import Info from "../components/Info";
 
 const Router = () => {
   return (
@@ -15,6 +15,7 @@ const Router = () => {
           <Route path='/myreactjs' element={<Myreactjs/>} />
           <Route path='/html' element={<Html />} />
           <Route path='/conocimientos' element={<Conocimientos />} />
+          <Route path='/info' element={<Info/>} />
           <Route path='/javascript' element={<Javasc />} />
         </Route>
       </Routes>

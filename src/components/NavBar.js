@@ -17,7 +17,7 @@ const NavBar = () => {
          <nav className='center'>
           <NavLink to='/'><li className='menu'>Home</li></NavLink>
           <NavLink to='/conocimientos'> <li>Conocimientos</li>  </NavLink>
-         
+            <NavLink to='/info'><li>Info</li>   </NavLink> 
          </nav>
       </div>
       
