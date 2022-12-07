@@ -10,6 +10,8 @@ background-repeat: round;
 }
 
 * {
+  box-sizing: border-box
+  ;
   margin: 4px;
 font-family: 'maven pro';
 
@@ -349,4 +351,46 @@ color: rgb(44, 44, 44);
 .certif{
   width: 280px;
   justify-content: center;
+}
+@media only screen and (max-width: 480px) {
+.activ {
+    width: auto;
+    height: 200px;
+    margin: 10%;
+    box-sizing: border-box;
+    position: absolute;
+    margin-top: 30vh;
+  }
+h2{
+  width: auto;
+  margin-top: 40vh;
+}
+.cert{
+  margin-top: 40vh;
+  width: 180px;
+}
+.parrafo{
+  width: auto;
+}
+.htmlSection, .htmlSection3{
+  width: 90%;
+  margin-bottom: 30px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+}
+.btn2{
+  margin: auto;
+}
+
+  .certificados{
+  display: flex;
+  flex-direction: column;
+}
+.dropDown, .dropDownContent:hover, nav{
+  width: 100%;
+  margin-bottom: 40px;
+ 
+}
 }
