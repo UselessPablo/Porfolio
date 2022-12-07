@@ -365,9 +365,10 @@ h2{
   width: auto;
   margin-top: 40vh;
 }
-.cert{
+.cert, .cert2{
   margin-top: 40vh;
-  width: 180px;
+  width: 200px;
+  margin-left: 10%;
 }
 .parrafo{
   width: auto;
@@ -387,10 +388,18 @@ form{
   .certificados{
   display: flex;
   flex-direction: column;
+    margin-left: 10%;
 }
 .dropDown, .dropDownContent:hover, nav{
   width: 100%;
   margin-bottom: 40px;
  
+}
+.tema{
+  
+ position: fixed;
+    top: 0;
+    right: 0;
+ margin: 66px;
 }
 }
