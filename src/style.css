@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Maven+Pro:wght@400;500&family=Roboto:wght@100;400&display=swap'); 
+body  {
+
+
+background-image: url('../src/img/skull.svg');
+background-size: cover;
+background-position: center;
+background-repeat: round;
+
+}
+
+* {
+  margin: 4px;
+font-family: 'maven pro';
+
+}
+h2{
+  margin-top: 130px;
+  color:rgb(255, 255, 255);
+  background-color: orangered;
+  padding: 2.4rem;
+  border-radius: 2rem 1rem 2rem 1rem;
+  text-align: center;
+  width: 200px;
+}
+h1{
+  color: white;
+  background-color: #36e900;
+  padding-top: 5.5rem;
+  padding-right: 2px;
+  border-radius: 15rem 7rem 7rem 15rem;
+  width: 120px;
+  text-align: center;
+  height: 150px;
+  margin-right: 8px;
+  /* margin-top: 60px; */
+  padding-left: 3px;
+}
+.navb nav  {
+  width: 98%;
+  display: flex;
+  background-color: rgb(0, 191, 255);
+  list-style: none;
+  border-color: orangered;
+  color:rgb(255, 255, 32);
+  border-radius: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+li {
+  /* margin-top: 50px; */
+  font-weight: 500;
+font-size: 1.4rem;
+list-style: none;
+margin-left: 10%;
+padding-left: 1rem;
+}
+ul{
+  margin-top: 2%;
+cursor: pointer;
+text-align: center;
+}
+li:hover {
+  background-color: rgb(255, 115, 0);
+  transform: translate(60px);
+  width: 250px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+  border-radius: 1rem;
+  padding: 0.4rem;
+}
+/*# sourceMappingURL=style.css.map */
+ol:hover{
+  background-color: red;
+  border-radius: 1rem;
+  padding: 8px;
+}
+.fetch{
+  position: absolute;
+  margin-left: 30%;
+    display: flex;
+    flex-wrap: wrap;
+   top: 0;
+   margin-top: 15%;
+}
+.img{
+  width: 60px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 30rem;
+}
+.btn {
+  border-radius: 0.4rem;
+  background-color:transparent;
+  cursor: pointer;
+  height: 50px;
+  margin-left: 10%;
+  margin-top: 20%;
+  border: none;
+}
+.btn:hover{
+  background-color:  rgb(252, 193, 0);
+}
+
+.activ{ 
+  position: fixed;
+  margin-left: 55%;
+   top: 0;
+   margin-top: 10%;
+} 
+.active{
+  color:yellow;
+  text-decoration: none;
+}
+a{
+  color:white;
+  text-decoration: none;
+}
+ol{
+ cursor: pointer;
+  text-align: center;
+  padding-top: 5px;
+  margin-right: 30px;
+}
+.dropDown {
+  width: 200px;
+  height: 145px;
+  margin-left: 2%;
+  
+}
+
+.dropDownContent {
+  display: none;
+  position: absolute;
+  float: center;
+  background-color: #00d9e9;
+  z-index: 5;
+  border-radius: 0.4rem;
+  margin-left: 2.7%;
+  
+}
+.dropDown:hover .dropDownContent {
+  display: flex;
+  background-color: rgb(3, 151, 156);
+  width: 20%;
+  border-radius: 2rem 20rem 2rem 15rem;
+  text-align: center;
+  z-index: 6;
+}
+.center{
+  margin-left: 5%;
+}
+       .fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+  }
+  @keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+  } 
+  
+  @keyframes imagen {
+
+  0%   {transform: translate( 5px);}
+  5%   {transform: translate( 10px);} 
+  10%  {transform: translate(15px)}
+  15%  {transform: translate(20px)}
+  20%  {transform: translate(25px)}
+  25% {transform: translate(30px)}
+  30% {transform: translate(35px)}
+  35% {transform: translate(40px)}
+   40% {transform: translate(45px)}
+   45% {transform: translate(50px)}
+  55% {transform: translate(55px)}
+  60% {transform: translate(50px)}
+  65% {transform: translate(45px) }
+  70% {transform: translate(40px) }
+  75% { transform: translate(35px)}
+  80% {transform: translate(30px) }
+  85% { transform: translate(25px)}
+   90% {transform: translate(20px)} 
+  95% {transform: translate(15px) }
+   100% {transform: translate(10px)}
+   105% {transform: translate(5px)}
+}
+
+
+.animate{
+  animation-iteration-count: infinite;
+  animation-name: imagen;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+}
+.imag{
+  width: 37px;
+  margin-right: 2px;
+}
+.htmlSection{
+  display: flex;
+background-color: #36e900;
+width: auto;
+margin-right: 40%;
+border-radius: 1.2rem;
+color: black;
+font-style: 'maven pro';
+font-weight: 600;
+position: absolute;
+  align-items: center;
+}
+.parrafo {
+  text-align: center;
+  z-index: 1;
+  padding: 5px;
+}
+span{
+  font-weight: 600;
+ margin-left: 10px;
+}
+.htmlSection2{
+ 
+  display: flex;
+background-color: #36e900;
+width: auto;
+margin-right: 40%;
+top:20%;
+border-radius: 1.2rem;
+color: black;
+font-style: 'maven pro';
+font-weight: 600;
+position: absolute; 
+margin-top: 50%;
+  align-items: center;
+ padding: 3px;
+}
+.htmlSection3{
+ 
+  display: flex;
+background-color: #36e900;
+width: auto;
+height: 50px;
+margin-right: 30%;
+top:20%;
+border-radius: 1rem;
+color: black;
+font-style: 'maven pro';
+font-weight: 600;
+position: absolute; 
+margin-top: 50px;
+  align-items: center;
+  padding: 3px;
+
+}
+input{
+  border-radius: 1.2rem;
+  border:none;
+  padding: 6px;
+ width: 100px;
+  font-weight: 500;
+}
+input:hover{
+  background-color: #7affc7;
+  cursor: pointer;
+  border: none;
+}
+.btn2{
+  border-radius: 0.6rem;
+  margin-left: 20px;
+  border: none;
+  padding: 0.4rem;
+}
+.none{
+  display: none;
+}
+.cert{
+  width: 350px;
+  border-radius: 2rem;
+  margin-top: 55%;
+ margin-left: 20%;
+  position: absolute;
+}
+form{
+   font-style: 'maven pro';
+  font-weight: 500;
+}
+.dark {
+background-color: #333;
+color: #fff;
+}
+.light {
+background-color: rgb(255, 231, 185);
+color: rgb(44, 44, 44);
+}
+.moon{
+  width: 30px;
+}
+.tema{
+ position: fixed;
+    top: 0;
+    right: 0;
+ margin: 48px;
+}
+.btnTheme{
+  border-radius: 0.4rem;
+  height: 50px;
+  border: none;
+  background-color: transparent;
+}
+.btnTheme:hover{
+  background-color: rgb(252, 193, 0);
+}
+.link{
+  padding-left: 6px;
+}
+.myReact{
+  display: block;
+  justify-content: column;
+  color: rgb(255, 51, 0);
+  font-weight: 600;
+  margin-top: 100px;
+}
+.center2{
+  text-align: left;
+  margin-top: 70px;
+  color: #1a5577;
+}
+.right{
+  text-align: right;
+
+}
+.cert2{
+  width: 350px;
+  border-radius: 2rem;
+ margin-left: 28%;
+  position: absolute;
+}
+.certificados{
+  display: flex;
+  justify-content: space-evenly;
+}
+.certif{
+  width: 280px;
+  justify-content: center;
+}
