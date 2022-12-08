@@ -361,7 +361,26 @@ color: rgb(44, 44, 44);
     position: absolute;
     margin-top: 30vh;
   }
-h2{
+.yo{
+  max-width: 50px;
+  margin-top: 20%;
+}
+  .yoText{
+  position: relative;
+  margin-left: 40%;
+}
+
+.sliderImg{
+  position: relative;
+  max-width: 30vw;
+  max-height: 20vh;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30%;
+  border-radius: 1rem;
+}
+  h2{
   width: auto;
   margin-top: 40vh;
 }
@@ -405,5 +424,58 @@ form{
 }
 }
 .yo{
-  width: 180px;
+  width: 100px;
+  position: absolute;
+  margin-left: 35%;
+}
+.sliderImg{
+  position: fixed;
+  width: 40vw;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40%;
+  border-radius: 1rem;
+}
+
+.slide{
+  position: fixed;
+  margin-left: 40%;
+  opacity: 0;
+  transition-duration: 1s easy;
+  display: flex;
+  justify-content: center;
+}
+.slide.act{
+  margin-left: 40%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.11);
+}
+.centerText{
+  text-align: center;
+  font-weight: 500;
+ margin-top: 25vh;
+  
+}
+.informacion{
+  display: flex;
+  flex-direction: column;
+}
+.bold{
+  font-weight: 600;
+}
+.sliderslider{
+  display: fixed;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25vh;
+}
+.yoText{
+  position: relative;
+  margin-left: 40%;
 }
