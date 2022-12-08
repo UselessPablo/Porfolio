@@ -11,7 +11,7 @@ const Slider = ({slides}) => {
     
 
 const autoSlide = ()=>{
-    setCurrent(current === length-1 ? 1 : current + 1)
+    setCurrent(current === length-1 ? 0 : current + 1)
 }
 
 const autoPlay = ()=>{
@@ -22,7 +22,7 @@ const autoPlay = ()=>{
     autoPlay()
    
     return (
-   <section className='slider'>
+   <section>
   
     {SliderData.map((slide, index)=>{
         

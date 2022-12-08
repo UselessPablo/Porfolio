@@ -361,7 +361,10 @@ color: rgb(41, 41, 41);
     position: absolute;
     margin-top: 30vh;
   }
-.yo{
+section{
+  max-height: 3px;
+}
+  .yo{
   max-width: 50px;
   margin-top: 20%;
 
@@ -434,7 +437,7 @@ form{
 }
 .sliderImg{
   position: fixed;
-  width: 60vw;
+  width: 50vw;
   height: 40vh;
   display: flex;
   justify-content: center;
@@ -483,4 +486,8 @@ form{
   position: relative;
   margin-left: 10%;
   width: 100%;
+  padding-top: 5px;
+}
+section{
+  height: 3px;
 }
