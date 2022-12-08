@@ -443,7 +443,7 @@ form{
   opacity: 2;
   transition-duration: 1s;
   transform: scale(1.11);
-  margin-left:48%;
+  margin-left:45%;
 
 }
 .centerText{
@@ -470,6 +470,7 @@ max-height: 10px;
   width: 100%;
   padding-top: 5px;
   margin-left: 38%;
+  margin-top: 10%;
 }
 section{
   height: 3px;
