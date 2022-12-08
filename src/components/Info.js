@@ -9,7 +9,7 @@ const Info = () => {
     <div className='informacion'>
           <p className='bold yoText'>Mi nombre el Pablo Auterio</p>
           
-          <p className='bold yoText'>Vivo en San Carlos de Bariloche</p>
+          
    
           <Slider slides={SliderData} />
     

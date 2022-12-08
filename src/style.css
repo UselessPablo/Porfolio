@@ -305,10 +305,9 @@ color: rgb(41, 41, 41);
   width: 30px;
 }
 .tema{
- position: fixed;
-    top: 0;
-    right: 0;
- margin: 48px;
+   position: absolute;
+  right:5%;
+  top: 5.7%;
 }
 .btnTheme{
   border-radius: 0.4rem;
@@ -364,14 +363,10 @@ color: rgb(41, 41, 41);
 section{
   max-height: 3px;
 }
-  .yo{
-  max-width: 50px;
-  margin-top: 20%;
 
-}
 .yoText{
-  position: relative;
-  margin-left: 10%;
+  
+  text-align: center;
   width: 100%;
   margin-top: -40px;
 }
@@ -388,7 +383,8 @@ section{
 }
   h2{
   width: auto;
-  margin-top: 40vh;
+ 
+  margin-bottom: 5vh;
 }
 .cert, .cert2{
   margin-top: 40vh;
@@ -415,26 +411,9 @@ form{
   flex-direction: column;
     margin-left: 10%;
 }
-.dropDown, .dropDownContent:hover, nav{
-  width: 100%;
-  margin-bottom: 40px;
- 
+
 }
-.tema{
-  
- position: fixed;
-    top: 0;
-    right: 0;
- margin: 66px;
- margin-top: 18.5%;
-}
-}
-.yo{
-  width: 100px;
-  position: absolute;
-  margin-left: 35%;
-  margin-top: 7vh;
-}
+
 .sliderImg{
   position: fixed;
   width: 50vw;
@@ -447,21 +426,25 @@ form{
 }
 
 .slide{
+  margin-bottom: 20vh;
   position: fixed;
-  margin-left: 40%;
   opacity: 0;
   transition-duration: 1s easy;
   display: flex;
   justify-content: center;
+  margin-left:15%;
+
 }
 .slide.act{
-  margin-left: 40%;
+  margin-bottom: 20vh;
   display: flex;
   justify-content: center;
   position: absolute;
-  opacity: 1;
+  opacity: 2;
   transition-duration: 1s;
   transform: scale(1.11);
+  margin-left:48%;
+
 }
 .centerText{
   text-align: center;
@@ -470,23 +453,23 @@ form{
   
 }
 .informacion{
-  display: flex;
-  flex-direction: column;
+max-height: 10px;
 }
 .bold{
   font-weight: 600;
+  text-align: center;
 }
 .sliderslider{
   display: fixed;
   justify-content: center;
   align-items: center;
-  margin-top: 25vh;
+  margin-top: 7vh;
 }
 .yoText{
-  position: relative;
-  margin-left: 10%;
+  text-align: center;
   width: 100%;
   padding-top: 5px;
+  margin-left: 38%;
 }
 section{
   height: 3px;
