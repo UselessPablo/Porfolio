@@ -5,12 +5,14 @@ import { SliderData } from './SliderData'
 
 const Info = () => {
   return (
-    <div className='informacion'>
     
+    <div className='informacion'>
+          <p className='bold yoText'>Mi nombre el Pablo Auterio</p>
+          <p className='bold yoText'>Vivo en San Carlos de Bariloche</p>
     <img className='yo' src={yo} alt='foto'/>
           <Slider slides={SliderData} />
-    <p className='bold yoText'>Mi nombre el Pablo Auterio</p>
-    {/* <p className='bold yoText'>Vivo en San Carlos de Bariloche</p> */}
+    
+    
     
     </div>
   )
