@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom'
 import Theme from './Theme'
 import menu from '../img/menu.svg'
 import Info from '../components/Info'
+import Footer from './Footer'
 
 const NavBar = () => {
   
@@ -24,10 +25,12 @@ const NavBar = () => {
           
          </nav>
       </div>
+      
+      <div>
+        
+      </div>
       <Info/>
       </div>
-      
- 
     </div>
   )
 }
