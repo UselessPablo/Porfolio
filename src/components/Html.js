@@ -14,7 +14,6 @@ const Html = () => {
        <div >  
           <a className='link' href='https://uselesspablo.github.io/repoMartesCoder/' target="_blank" rel="noreferrer" >Link Proyecto</a>
         </div>
-       <img className='cert animate' src={html} alt='cert html' />
     </div>
     </>
   )

@@ -43,7 +43,6 @@ const thanks = () =>{
        <div>
       <a className='link' href='https://uselesspablo.github.io/Androidphone/' target="_blank" rel="noreferrer" >Link Proyecto</a>
        </div>
-    <img className='cert animate' src={javas} alt='cert javascript'/>
     </div>  
     </>
     ) :  (  <MyReact data={nombre} data2={apellido} data3={email}/>

@@ -2,7 +2,8 @@
 body  {
 
 
-
+/* background-image: url('../src/img/skull.svg');
+position: fixed; */
 /* background-size: cover;
 background-position: center; */
 background-repeat: round;
@@ -17,13 +18,13 @@ font-family: 'maven pro';
 
 }
 h2{
-  margin-top: 130px;
+  margin-top: 20px;
   color:rgb(255, 255, 255);
   background-color: orangered;
-  padding: 2.4rem;
+  display: flex;
   border-radius: 2rem 1rem 2rem 1rem;
   text-align: center;
-  width: 200px;
+  width: auto;
 }
 h1{
   color: white;
@@ -38,10 +39,9 @@ h1{
   /* margin-top: 60px; */
   padding-left: 3px;
 }
-.navb nav  {
-  width: 98%;
+.navb, nav  {
+  width: 90%;
   display: flex;
-  background-color: rgb(0, 191, 255);
   list-style: none;
   border-color: orangered;
   color:rgb(255, 255, 32);
@@ -52,20 +52,20 @@ h1{
 li {
   /* margin-top: 50px; */
   font-weight: 500;
-font-size: 1.4rem;
+font-size: 1.2rem;
 list-style: none;
-margin-left: 10%;
 padding-left: 1rem;
 }
 ul{
   margin-top: 2%;
 cursor: pointer;
 text-align: center;
+display: flex;
 }
 li:hover {
   background-color: rgb(255, 115, 0);
-  transform: translate(60px);
-  width: 250px;
+  display: flex;
+  width: auto;
   cursor: pointer;
   transition-duration: 0.5s;
   transition-timing-function: ease-in;
@@ -106,10 +106,10 @@ ol:hover{
 }
 
 .activ{ 
-  position: fixed;
-  margin-left: 55%;
-   top: 0;
-   margin-top: 10%;
+  position: absolute;
+   top: 10%;
+  display: flex;
+   margin-left: 13%;
 } 
 .active{
   color:yellow;
@@ -126,8 +126,7 @@ ol{
   margin-right: 30px;
 }
 .dropDown {
-  width: 200px;
-  height: 145px;
+  width: 100px;
   margin-left: 2%;
   
 }
@@ -135,20 +134,23 @@ ol{
 .dropDownContent {
   display: none;
   position: absolute;
-  float: center;
-  background-color: #00d9e9;
+  float: inline-end;
   z-index: 5;
   border-radius: 0.4rem;
-  margin-left: 2.7%;
-  
+  margin-left: 10vw;
+    margin-top: -30%;
 }
 .dropDown:hover .dropDownContent {
   display: flex;
-  background-color: rgb(3, 151, 156);
+  float: inline-end;
+  flex-direction: row;
   width: 20%;
   border-radius: 2rem 20rem 2rem 15rem;
   text-align: center;
   z-index: 6;
+margin-left: 15vw;
+    margin-top: -50%;
+  position: inherit;
 }
 .center{
   margin-left: 5%;
@@ -206,18 +208,7 @@ ol{
   width: 37px;
   margin-right: 2px;
 }
-.htmlSection{
-  display: flex;
-background-color: #36e900;
-width: auto;
-margin-right: 40%;
-border-radius: 1.2rem;
-color: black;
-font-style: 'maven pro';
-font-weight: 600;
-position: absolute;
-  align-items: center;
-}
+
 .parrafo {
   text-align: center;
   z-index: 1;
@@ -243,7 +234,7 @@ margin-top: 50%;
   align-items: center;
  padding: 3px;
 }
-.htmlSection3{
+.htmlSection3, .htmlSection{
  
   display: flex;
 background-color: #36e900;
@@ -307,7 +298,7 @@ color: rgb(41, 41, 41);
 .tema{
    position: absolute;
   right:5%;
-  top: 5.5%;
+  top: 3.1%;
 }
 .btnTheme{
   border-radius: 0.4rem;
@@ -351,14 +342,17 @@ color: rgb(41, 41, 41);
   width: 280px;
   justify-content: center;
 }
+
+
+
 @media only screen and (max-width: 480px) {
 .activ {
     width: auto;
     height: 200px;
-    margin: 10%;
     box-sizing: border-box;
     position: absolute;
     margin-top: 30vh;
+
   }
 section{
   max-height: 3px;
@@ -382,21 +376,27 @@ section{
   border-radius: 1rem;
 }
   h2{
-  width: auto;
- 
   margin-bottom: 5vh;
+  padding: 0;
+  font-size: 1rem;
+  margin-left: 23%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .cert, .cert2{
-  margin-top: 40vh;
+  margin-top: 50vh;
   width: 200px;
   margin-left: 10%;
 }
 .parrafo{
   width: auto;
 }
-.htmlSection, .htmlSection3{
+
+
+.htmlSection3, .htmlSection{
   width: 90%;
-  margin-bottom: 30px;
+  margin-top: 60vh;
 }
 form{
   display: flex;
@@ -469,7 +469,6 @@ max-height: 10px;
   text-align: center;
   width: 100%;
   padding-top: 5px;
-  margin-left: 38%;
   margin-top: 10%;
 }
 section{
