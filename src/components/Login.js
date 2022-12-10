@@ -66,7 +66,7 @@ const handlerForgetPassword = () => {
   }
 const goTo = ()=>{
 
-navigate('/Home')
+navigate('/home')
 }
   return (
     <div>

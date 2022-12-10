@@ -7,7 +7,8 @@ import Javasc from "../components/Javasc";
 import Login from "../components/Login";
 import Info from "../components/Info";
 import SingUp from '../components/SignUp'
-import Home from '../components/Home'
+import NavBar from '../components/NavBar'
+
 
 
 
@@ -16,9 +17,9 @@ const Router = () => {
     
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
-        <Route path='/' element={<Layout />}>
-          <Route path='/myreactjs' element={<Login/>} />
-          <Route path='/myreactjs' element={<Home />} />
+        <Route path='/' element={<Layout/>}>
+          <Route path='/login' element={<Login/>} />
+          <Route path='/home/' element={<NavBar/>} />
           <Route path='/myreactjs' element={<SingUp />} />
           <Route path='/html' element={<Html />} />
           <Route path='/conocimientos' element={<Conocimientos />} />
