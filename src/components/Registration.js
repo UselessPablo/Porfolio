@@ -1,18 +1,22 @@
 import React, { useState } from 'react'
 import { getAuth, createUserWithEmailAndPassword, sendEmailVerification } from "firebase/auth";
 import app from '../utils/Firebase';
-import { Link } from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
+import NavBar from './NavBar';
+
 
 const auth = getAuth(app);
 
 const Registration = () => {
-    //state for error
+     const navigate = useNavigate();//state for error
     const [error, setError] = useState('');
+    
 
     //state for success
     const [success, setSuccess] = useState('')
-
+    const [form, setForm] = useState(true);
     //handler for submit registration form
+   
     const submitHandler = (e) => {
         e.preventDefault();
         let form = e.target;
@@ -50,6 +54,7 @@ const Registration = () => {
                 setSuccess('Registration successful...');
                 form.reset();
                 mailVarification();
+                clear()
             })
             .catch(err => {
 
@@ -64,17 +69,28 @@ const Registration = () => {
         sendEmailVerification(auth.currentUser)
             .then(() => {
 
-                alert('An email varification link send to your email. Please varify!')
+                alert('Perfecto, Ya Puedes Loguearte Para Ingresar')
             })
             .catch(error => {
 
                 console.error(error)
             })
+      
+        }
+    
+    const clear = ()=>{
+        setForm(false);
+      console.log('dd');
     }
+    const goTo = () => {
 
-    return (
+        navigate('../pages/home')
+
+    }
+        return (
+        
         <div>
-            <form onSubmit={submitHandler} className=''>
+            <form  onSubmit={submitHandler} className=''>
                 <h3 className='text-warning my-3'>Te Debes Registrar Para Ingresar,</h3>
                 <div className="mb-3">
                     <label htmlFor="formGroupExampleInput" className="">Name:</label>
@@ -92,8 +108,10 @@ const Registration = () => {
                     <p><small className=''>{success}</small></p>
                 </div>
 
-                <input className="center bold green" type="submit" value=" Sign In" />
-                <p className='bold'><small>Already have an account? <Link to={'/login'}>Login</Link></small></p>
+                {/* <input className="center bold green" type="submit" value=" Sign In" /> */}
+                    <button type="submit" onClick={goTo} className="btn3 bold">Enviar</button>
+                <p className='bold'><small>Already have an account? <Link to={'../pages/login'} onClick={clear}>Login</Link></small></p>
+              
             </form>
 
 

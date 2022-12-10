@@ -8,7 +8,8 @@ import Login from "../components/Login";
 import Info from "../components/Info";
 import SingUp from '../components/SignUp'
 import NavBar from '../components/NavBar'
-
+import Registration from "../components/Registration";
+import Home from "../components/Home";
 
 
 
@@ -18,14 +19,12 @@ const Router = () => {
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path='/' element={<Layout/>}>
-          <Route path='/login' element={<Login/>} />
-          <Route path='/home/' element={<NavBar/>} />
-          <Route path='/myreactjs' element={<SingUp />} />
-          <Route path='/html' element={<Html />} />
-          <Route path='/conocimientos' element={<Conocimientos />} />
-          <Route path='/info' element={<Info/>} />
-          <Route path='/javascript' element={<Javasc />} />
         </Route>
+          <Route path='/pages/login/' element={<Login/>} />
+          <Route path='/pages/home/' element={<NavBar/>} />
+          <Route path='/registration/' element={<Registration/>} />
+          
+       
       </Routes>
     </BrowserRouter>
    

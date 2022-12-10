@@ -7,7 +7,7 @@ const Info = () => {
   return (
     
     <div className='informacion'>
-          <h1 className='bold yoText'>Mi nombre el Pablo Auterio</h1>
+          <h1 className='bold yoText'>Mi Nombre Es Pablo Auterio</h1>
         
           <Slider slides={SliderData} />
     

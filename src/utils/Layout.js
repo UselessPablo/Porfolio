@@ -4,14 +4,22 @@ import Navbar from '../components/NavBar';
 import Footer from '../components/Footer'
 import Login from '../components/Login';
 import Registration from '../components/Registration';
+import Home from '../components/Home'
 
-const Layout = () => {
-  return (
+const Layout = () => (
+  
+
+  
+  
        <>
-    <Registration/>
+       <Home />
       <Outlet />
+      
+    {/* <Registration/> */}
+     
+      
     </>
   )
-}
+
 
 export default Layout

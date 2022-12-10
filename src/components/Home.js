@@ -1,13 +1,16 @@
 import React from 'react'
 import app from '../utils/Firebase'
+import {Link} from 'react-router-dom'
+import Layout from '../utils/Layout'
+const Home = () => (
+ 
+    
+      <>
+    <h1>Bienvenido a mi demo, para comenzar debes Registrarte</h1>
+    <Link to='/registration/'>Continuar</Link>
+  </>
+   
+)
 
-const Home = () => {
-  return (
-    <div>
-    <h1>Home</h1>
-    <button onClick={()=> app.auth().signOut()}>Sign Out</button>
-    </div>
-  )
-}
 
 export default Home

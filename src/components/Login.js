@@ -8,7 +8,8 @@ import NavBar from '../components/NavBar'
 const auth = getAuth(app)
 
 const Login = () => {
-const navigate = useNavigate();
+ 
+  const navigate = useNavigate();
   //state for login error
   const [error, setError] = useState('');
 
@@ -64,10 +65,12 @@ const handlerForgetPassword = () => {
         alert('Your password set link send to your mail');
       })
   }
-const goTo = ()=>{
-
-navigate('/home')
-}
+ 
+  const goTo = ()=>{
+   
+    navigate('../pages/home') 
+   
+  }
   return (
     <div>
       <form className='' onSubmit={handleLogin}>
@@ -82,7 +85,7 @@ navigate('/home')
         </div>
         <p><small className='red'>{error}</small></p>
 
-        <button type="submit" onClick={goTo} className="btn3">Submit</button>
+        <button type="submit" onClick={goTo} className="btn3 bold">Enviar</button>
 
         <p><small>Need an account? Create your account from <Link to={'/registration'}>Registration</Link></small></p>
         <p><small onClick={handlerForgetPassword}>Forget Password..<Link>Click here..</Link></small></p>
