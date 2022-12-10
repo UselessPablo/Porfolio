@@ -2,7 +2,7 @@
 
 import React from 'react'
 import Conocimientos from './Conocimientos'
-import html from '../img/desarrollo.png'
+
 
 const Html = () => {
   return (

@@ -4,15 +4,22 @@ import Html from '../components/Html'
 import Layout from './Layout';
 import Conocimientos from "../components/Conocimientos";
 import Javasc from "../components/Javasc";
-import Myreactjs from "../components/Myreactjs";
+import Login from "../components/Login";
 import Info from "../components/Info";
+import SingUp from '../components/SignUp'
+import Home from '../components/Home'
+
+
 
 const Router = () => {
   return (
+    
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path='/' element={<Layout />}>
-          <Route path='/myreactjs' element={<Myreactjs/>} />
+          <Route path='/myreactjs' element={<Login/>} />
+          <Route path='/myreactjs' element={<Home />} />
+          <Route path='/myreactjs' element={<SingUp />} />
           <Route path='/html' element={<Html />} />
           <Route path='/conocimientos' element={<Conocimientos />} />
           <Route path='/info' element={<Info/>} />
@@ -20,7 +27,7 @@ const Router = () => {
         </Route>
       </Routes>
     </BrowserRouter>
-
+   
   )
 }
 

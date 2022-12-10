@@ -7,10 +7,8 @@ const Info = () => {
   return (
     
     <div className='informacion'>
-          <p className='bold yoText'>Mi nombre el Pablo Auterio</p>
-          
-          
-   
+          <h1 className='bold yoText'>Mi nombre el Pablo Auterio</h1>
+        
           <Slider slides={SliderData} />
     
     

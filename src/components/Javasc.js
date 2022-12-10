@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import Conocimientos from './Conocimientos';
 import javas from '../img/javasc.png'
-import MyReact from './MyReact';
+import MyReact from './SignUp';
 
 
 const Javasc = () => {

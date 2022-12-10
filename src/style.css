@@ -27,17 +27,7 @@ h2{
   width: auto;
 }
 h1{
-  color: white;
-  background-color: #36e900;
-  padding-top: 5.5rem;
-  padding-right: 2px;
-  border-radius: 15rem 7rem 7rem 15rem;
-  width: 120px;
-  text-align: center;
-  height: 150px;
-  margin-right: 8px;
-  /* margin-top: 60px; */
-  padding-left: 3px;
+  font-size: 1.3rem;
 }
 .navb, nav  {
   width: 90%;
@@ -116,7 +106,7 @@ ol:hover{
   text-decoration: none;
 }
 a{
-  color:white;
+  color:rgb(66, 177, 15);
   text-decoration: none;
 }
 ol{
@@ -296,9 +286,9 @@ color: rgb(41, 41, 41);
   width: 30px;
 }
 .tema{
-   position: absolute;
-  right:5%;
-  top: 3.1%;
+ 
+  display: flex;
+  justify-content: center;
 }
 .btnTheme{
   border-radius: 0.4rem;
@@ -312,36 +302,15 @@ color: rgb(41, 41, 41);
 .link{
   padding-left: 6px;
 }
-.myReact{
-  display: block;
-  justify-content: column;
-  color: rgb(255, 51, 0);
-  font-weight: 600;
-  margin-top: 100px;
-}
+
 .center2{
   text-align: left;
   margin-top: 70px;
   color: #1a5577;
 }
-.right{
-  text-align: right;
 
-}
-.cert2{
-  width: 350px;
-  border-radius: 2rem;
- margin-left: 28%;
-  position: absolute;
-}
-.certificados{
-  display: flex;
-  justify-content: space-evenly;
-}
-.certif{
-  width: 280px;
-  justify-content: center;
-}
+
+
 
 
 
@@ -352,17 +321,20 @@ color: rgb(41, 41, 41);
     box-sizing: border-box;
     position: absolute;
     margin-top: 30vh;
-
   }
-section{
+h1{
+  padding-top: 25%;
+}
+
+  section{
   max-height: 3px;
 }
 
 .yoText{
   
   text-align: center;
-  width: 100%;
-  margin-top: -40px;
+  padding-top: 25%;
+ 
 }
 
 .sliderImg{
@@ -375,42 +347,11 @@ section{
   margin-left: 30%;
   border-radius: 1rem;
 }
-  h2{
-  margin-bottom: 5vh;
-  padding: 0;
-  font-size: 1rem;
-  margin-left: 23%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.cert, .cert2{
-  margin-top: 50vh;
-  width: 200px;
-  margin-left: 10%;
-}
+
 .parrafo{
   width: auto;
 }
 
-
-.htmlSection3, .htmlSection{
-  width: 90%;
-  margin-top: 60vh;
-}
-form{
-  display: flex;
-  flex-direction: column;
-}
-.btn2{
-  margin: auto;
-}
-
-  .certificados{
-  display: flex;
-  flex-direction: column;
-    margin-left: 10%;
-}
 
 }
 
@@ -457,7 +398,7 @@ max-height: 10px;
 }
 .bold{
   font-weight: 600;
-  text-align: center;
+ 
 }
 .sliderslider{
   display: fixed;
@@ -468,8 +409,8 @@ max-height: 10px;
 .yoText{
   text-align: center;
   width: 100%;
-  padding-top: 5px;
-  margin-top: 10%;
+  padding-top: 2%;
+
 }
 section{
   height: 3px;
@@ -479,8 +420,28 @@ section{
   display: flex;
   justify-content: space-evenly;
  align-items: center;
- margin-top: 60vh;
+ margin-top: 80vh;
 }
 .footImg{
   width: 40px;
+}
+label{
+  background-color: #7affc7;
+  text-align: center;
+  padding: 3px;
+  border-radius: 4px;
+}
+.green{
+  background-color: green;
+}
+.red{
+  background-color: red;
+}
+.btn3{
+  border-radius: 0.5rem;
+  background-color: #8ddb75;
+  padding: 7px;
+  border: none;
+  text-align: center;
+  margin-left: 3%;
 }

@@ -17,7 +17,7 @@ const toggleTheme = ()=>{
     return (
     <>
     <div className={ `Tema ${theme}`}></div>
-        <button className='btnTheme' onClick={toggleTheme}><img className='moon' src={moon} alt='moon logo'/></button>
+        <button className='btnTheme' onClick={toggleTheme}><img className='moon' src={moon} alt='moon logo'/>Dark</button>
         </>
     )
 }
