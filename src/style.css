@@ -20,7 +20,7 @@ font-family: 'maven pro';
 h2{
 
   text-align: center;
-  width: auto;
+  width: 100%;
 }
 h1{
   font-size: 1.3rem;
@@ -423,7 +423,8 @@ section{
   display: flex;
   justify-content: space-evenly;
  align-items: center;
- margin-top: 70vh;
+bottom: 0;
+ position: sticky;
 }
 .footImg{
   width: 40px;
@@ -454,4 +455,16 @@ label{
   margin-top: 40vh;
   justify-content: center;
   position: absolute;
+}
+.altura{
+  margin-top: 50vh;
+}
+.textAlign{
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.pBot{
+  padding-bottom: 0.6rem;
 }

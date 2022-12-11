@@ -65,7 +65,7 @@ const Login = ({name}) => {
  
   const goTo = ()=>{
    
-    navigate('../pages/home') 
+    navigate('../pages/home', name={name}) 
   }
   return (
     <div>

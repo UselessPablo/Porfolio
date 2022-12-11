@@ -4,7 +4,7 @@ import { useState } from 'react'
 import Slider from './Slider'
 import { SliderData } from './SliderData'
 import Footer from './Footer'
-
+import Works from './Works'
 const Info = () => {
  
   const [load, setLoad]= useState(true);
@@ -12,21 +12,18 @@ const Info = () => {
   setTimeout(() => {
     setLoad(true)?
     <Loader />:setLoad(false)
-    }, 4000);
+    }, 4500);
 
-  
-  
   return (
    <>
-  
     {(
       load ? <Loader/> : 
     
     <div className='informacion'>
-        
           <h1 className='bold yoText'>Mi Nombre Es Pablo Auterio</h1>
-        
           <Slider slides={SliderData} />
+      
+      <Works/>
       <Footer/>
     </div>
     

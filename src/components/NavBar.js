@@ -2,7 +2,7 @@
 
 import Theme from './Theme'
 import Info from '../components/Info'
-
+import Works from './Works'
 
 
 const NavBar = () => {
@@ -13,12 +13,11 @@ const NavBar = () => {
       <div>
       <div className='tema'>
         < Theme />
+      </div> 
       </div>
-         
-      </div>
-    
     <div className='infor'>
-        <Info />
+        <Info/>
+    
     </div>
   
     </> 
