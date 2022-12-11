@@ -1,4 +1,4 @@
-import { getAuth, sendPasswordResetEmail, signInWithEmailAndPassword } from 'firebase/auth';
+import { getAuth, sendPasswordResetEmail, signInWithEmailAndPassword, sendEmailVerification } from 'firebase/auth';
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import app from '../utils/Firebase';
@@ -25,13 +25,12 @@ const Login = () => {
     let email = form.email.value
     let password = form.password.value
 
-    // console.log(email, password)
 
     signInWithEmailAndPassword(auth, email, password)
       .then(result => {
-
         const user = result.user;
-        console.log(user)
+        console.log(user);
+        
         form.reset();
         alert('Login Successful')
         goTo()
@@ -57,7 +56,6 @@ const Login = () => {
 
   
 const handlerForgetPassword = () => {
-
     sendPasswordResetEmail(auth, email)
       .then(() => {
 

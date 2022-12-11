@@ -143,7 +143,7 @@ margin-left: 15vw;
   position: inherit;
 }
 .center{
-  margin-left: 5%;
+  margin-left: 4%;
 }
        .fadeIn {
   -webkit-animation-name: fadeIn;
@@ -275,7 +275,7 @@ form{
   font-weight: 500;
 }
 .dark {
-background-color: rgb(34, 34, 34);
+background-color: #222222;
 color: #fff;
 }
 .light {
@@ -308,7 +308,12 @@ color: rgb(41, 41, 41);
   margin-top: 70px;
   color: #1a5577;
 }
-
+.center3{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20vh;
+}
 
 
 

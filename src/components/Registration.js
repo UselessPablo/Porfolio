@@ -82,11 +82,10 @@ const Registration = () => {
         setForm(false);
       console.log('dd');
     }
-    const goTo = () => {
+    // const goTo = () => {
+    //     navigate('../pages/home')
 
-        navigate('../pages/home')
-
-    }
+    // }
         return (
         
         <div>
@@ -109,7 +108,7 @@ const Registration = () => {
                 </div>
 
                 {/* <input className="center bold green" type="submit" value=" Sign In" /> */}
-                    <button type="submit" onClick={goTo} className="btn3 bold">Enviar</button>
+                    <button type="submit"  className="btn3 bold">Enviar</button>
                 <p className='bold'><small>Already have an account? <Link to={'../pages/login'} onClick={clear}>Login</Link></small></p>
               
             </form>
