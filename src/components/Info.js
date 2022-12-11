@@ -3,8 +3,10 @@ import Loader from './Loader'
 import { useState } from 'react'
 import Slider from './Slider'
 import { SliderData } from './SliderData'
+import Footer from './Footer'
 
 const Info = () => {
+ 
   const [load, setLoad]= useState(true);
     
   setTimeout(() => {
@@ -18,17 +20,17 @@ const Info = () => {
    <>
   
     {(
-      load ? <Loader/>: 
-    
+      load ? <Loader/> : 
     
     <div className='informacion'>
+        
           <h1 className='bold yoText'>Mi Nombre Es Pablo Auterio</h1>
         
           <Slider slides={SliderData} />
-  
+      <Footer/>
     </div>
     
-    )}
+      )}
     
     </>
     

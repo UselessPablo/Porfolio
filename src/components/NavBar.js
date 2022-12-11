@@ -1,9 +1,8 @@
 
-import { NavLink } from 'react-router-dom'
+
 import Theme from './Theme'
-import menu from '../img/menu.svg'
 import Info from '../components/Info'
-import Javasc from './Javasc'
+
 
 
 const NavBar = () => {

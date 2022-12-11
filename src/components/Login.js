@@ -1,14 +1,16 @@
-import { getAuth, sendPasswordResetEmail, signInWithEmailAndPassword, sendEmailVerification } from 'firebase/auth';
+import { getAuth,  signInWithEmailAndPassword } from 'firebase/auth';
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import app from '../utils/Firebase';
-import NavBar from '../components/NavBar'
+import Info from './Info';
+
+
 
 
 const auth = getAuth(app)
 
-const Login = () => {
- 
+const Login = ({name}) => {
+  console.log({ name });
   const navigate = useNavigate();
   //state for login error
   const [error, setError] = useState('');
@@ -53,39 +55,36 @@ const Login = () => {
   
   }
 
+// const handlerForgetPassword = () => {
+//     sendPasswordResetEmail(auth, email)
+//       .then(() => {
 
-  
-const handlerForgetPassword = () => {
-    sendPasswordResetEmail(auth, email)
-      .then(() => {
-
-        alert('Your password set link send to your mail');
-      })
-  }
+//         alert('Your password set link send to your mail');
+//       })
+//   }
  
   const goTo = ()=>{
    
     navigate('../pages/home') 
-   
   }
   return (
     <div>
       <form className='' onSubmit={handleLogin}>
-        <h3 className=''>Login Here please,</h3>
-        <div className="">
-          <label htmlFor="exampleInputEmail1" className="">Email address</label>
-          <input onBlur={emailHandler} type="email" name='email' className="" id="exampleInputEmail1" aria-describedby="emailHelp" />
+        <h3 className=''>Login Here please, {name}</h3>
+        <div className="pTop">
+          <label htmlFor="exampleInputEmail1" className="textAlign">Email address</label>
+          <input onBlur={emailHandler} type="email" name='email' className="textAlign" id="exampleInputEmail1" aria-describedby="emailHelp" />
         </div>
-        <div className="mb-3">
-          <label htmlFor="exampleInputPassword1" className="">Password</label>
-          <input type="password" name='password' className="" id="exampleInputPassword1" />
+        <div className="pTop">
+          <label htmlFor="exampleInputPassword1" className="textAlign">Password</label>
+          <input type="password" name='password' className="textAlign" id="exampleInputPassword1" />
         </div>
         <p><small className='red'>{error}</small></p>
 
         <button type="submit"  className="btn3 bold">Enviar</button>
 
-        <p><small>Need an account? Create your account from <Link to={'/registration'}>Registration</Link></small></p>
-        <p><small onClick={handlerForgetPassword}>Forget Password..<Link>Click here..</Link></small></p>
+        <p><small>No tienes cuenta? Crea una Cuenta <Link to={'/registration'}>Registration</Link></small></p>
+       
       </form>
     </div>
   );

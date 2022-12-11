@@ -18,11 +18,7 @@ font-family: 'maven pro';
 
 }
 h2{
-  margin-top: 20px;
-  color:rgb(255, 255, 255);
-  background-color: orangered;
-  display: flex;
-  border-radius: 2rem 1rem 2rem 1rem;
+
   text-align: center;
   width: auto;
 }
@@ -314,7 +310,9 @@ color: rgb(41, 41, 41);
   width: 100%;
   margin-top: 20vh;
 }
-
+.pTop{
+ padding-top: 0.6rem;
+}
 
 
 
