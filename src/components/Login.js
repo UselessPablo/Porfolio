@@ -34,7 +34,7 @@ const Login = () => {
         console.log(user)
         form.reset();
         alert('Login Successful')
-      
+        goTo()
         setError('')
       })
 
@@ -50,7 +50,6 @@ const Login = () => {
   const emailHandler = (e) => {
 
     let mail = e.target.value
-    console.log(mail);
     setMail(mail)
   
   }
@@ -85,7 +84,7 @@ const handlerForgetPassword = () => {
         </div>
         <p><small className='red'>{error}</small></p>
 
-        <button type="submit" onClick={goTo} className="btn3 bold">Enviar</button>
+        <button type="submit"  className="btn3 bold">Enviar</button>
 
         <p><small>Need an account? Create your account from <Link to={'/registration'}>Registration</Link></small></p>
         <p><small onClick={handlerForgetPassword}>Forget Password..<Link>Click here..</Link></small></p>
