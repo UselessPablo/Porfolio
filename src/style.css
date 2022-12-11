@@ -448,3 +448,10 @@ label{
   text-align: center;
   margin-left: 3%;
 }
+.take{
+  display: flex;
+  flex-direction: column;
+  margin-top: 40vh;
+  justify-content: center;
+  position: absolute;
+}

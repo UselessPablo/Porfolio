@@ -21,8 +21,9 @@ const Loader = () => {
               wrapperStyle={{}}
               wrapperClass="dna-wrapper"
           />
+          <div className='take'>
             { show ? 
-            (<p>Installing  </p>)
+            (<p className='center'>Installing  </p>)
            :
                 (<p>Virus Install ok...</p>)  
             }
@@ -31,6 +32,7 @@ const Loader = () => {
             (<p>Obteniendo Información de Google Acount</p>)
             :
              (<p>Datos de Tarjtas obtenidos</p>)}  
+            </div>
     </div>
   )
 }
